@@ -12,6 +12,12 @@ group :development do
   gem 'sqlite3', '1.3.5'
 end
 
+gem 'annotate', '2.5.0', group: :development
+
+#group :production, :staging do
+#  gem "pg"
+#end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -24,4 +30,4 @@ end
 gem 'jquery-rails', '2.0.2'
 
 gem 'bootstrap-sass', '2.0.4'
-
+gem 'bcrypt-ruby', '3.0.1'
