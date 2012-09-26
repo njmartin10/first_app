@@ -1,9 +1,21 @@
 require 'spec_helper'
 
-describe "Landing page" do
+describe "Static pages" do
 
-  it "should have the content 'Sign up now'" do
-    visit '/'
-    page.should have_content('Sign up now to give the developer access to all your credit cards!')
+  subject { page }
+
+  describe "Home page" do
+    before { visit root_path }
+
+    it { should have_selector('h1',    text: 'Sign up now to give the developer access to all your credit cards!') }
+    it { should have_selector('title', text: full_title('')) }
+    it { should_not have_selector 'title', text: '| Home' }
+  end
+
+  describe "Help page" do
+    before { visit help_path }
+
+    it { should have_selector('h1',    text: 'Help') }
+    it { should have_selector('title', text: full_title('Help')) }
   end
 end
