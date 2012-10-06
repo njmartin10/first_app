@@ -19,15 +19,14 @@
     </div>
 <% else %>
     <div class="center hero-unit">
+      <div class ="test left">
       <h1>Poahst!</h1>
 
       <h2>
         Post random stuff with Poahst!
       </h2>
-
+      </div>
       <%= link_to "Sign up now!", signup_path,
                   class: "btn btn-large btn-primary" %>
     </div>
-
-    <%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 <% end %> 

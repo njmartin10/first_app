@@ -28,6 +28,18 @@ html {
 
 body {
   padding-top: 60px;
+  background-image: url('parthenon.JPG');
+  background-size: 1440px 800px;
+  background-repeat:repeat;
+}
+
+.hero-unit {
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color:rgba(255,255,255,0.7);
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
 }
 
 section {
