@@ -12,6 +12,12 @@ describe User do
   it { should respond_to(:authenticate) }
   it { should respond_to(:microposts) }
 
+  it { should respond_to(:feed) }
+  it { should respond_to(:relationships) }
+  it {should respond_to(:followed_users)}
+  it { should respond_to(:reverse_relationships) }
+  it { should respond_to(:followers) }
+
   describe "micropost associations" do
 
     before { @user.save }
